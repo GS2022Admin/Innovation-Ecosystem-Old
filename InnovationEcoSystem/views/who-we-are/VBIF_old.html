@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--><!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]--><!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]--><!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <title>Value-Driven Framework for Evaluating Healthcare Innovations</title>
+    <meta name="description" content="Value-Driven Framework for Evaluating Healthcare Innovations">
+    <meta name="keywords" content="">
+
+
+    <!-- High Level meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?ver=true&amp;agency=VA"></script>
+
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/INNOVATIONECOSYSTEM/assets/uswds-2-0-3/css/uswds.css">
+    <link rel="stylesheet" href="/INNOVATIONECOSYSTEM/assets/css/main.css">
+    <!-- custom hero slider -->
+    <link rel="stylesheet" href="/INNOVATIONECOSYSTEM/assets/css/slick.css">
+    <link rel="stylesheet" href="/INNOVATIONECOSYSTEM/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="/INNOVATIONECOSYSTEM/assets/fontawesome-free-5.15.4-web/css/all.css">
+
+    <!-- JS Scripts -->
+    <script type="text/javascript" src="/INNOVATIONECOSYSTEM/assets/uswds-2-0-3/js/uswds.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- custom hero slider -->
+    <script type="text/javascript" src="/INNOVATIONECOSYSTEM/assets/js/slick.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        ul li::marker {
+            color: white !important;
+        }
+
+        .TempBox {
+/*            border: 1px solid red !important;*/
+        }
+
+        .nbSection {
+        }
+
+        @media screen and (max-width:600px) {
+            .nbSection {
+                width: 100% !important;
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).resize(function () {
+            ResetCoordinatesOfSiteMap();
+        });
+        $(document).ready(function () {
+            ResetCoordinatesOfSiteMap();
+
+        });
+        function ResetCoordinatesOfSiteMap() {
+            var img = document.getElementById('VBIF_ValueImage');
+            var width = img.clientWidth;
+            var height = img.clientHeight;
+            //300, 170, 75
+            var r1_w = (330 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r1_h = (170 / 641);    // actual y location of full size image divided by actual height of full image
+
+            var r2_w = (557 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r2_h = (170 / 641);
+
+            var r3_w = (754 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r3_h = (170 / 641);
+
+            var r4_w = (967 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r4_h = (170 / 641);
+
+            var r5_x1 = (559 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r5_y1 = (58 / 641);
+            var r5_x2 = (728 / 1090);
+            var r5_y2 = (22 / 641);
+
+            var r6_x1 = (18 / 1090);  // actual x location of full size image divided by actual width of full image
+            var r6_y1 = (230 / 641);
+            var r6_x2 = (239 / 1090);
+            var r6_y2 = (156 / 641);
+
+            var pnt1_w = parseInt(width * r1_w);
+            var pnt1_h = parseInt(height * r1_h);
+
+            var pnt2_w = parseInt(width * r2_w);
+            var pnt2_h = parseInt(height * r2_h);
+
+            var pnt3_w = parseInt(width * r3_w);
+            var pnt3_h = parseInt(height * r3_h);
+
+            var pnt4_w = parseInt(width * r4_w);
+            var pnt4_h = parseInt(height * r4_h);
+
+            var pnt5_x1 = parseInt(width * r5_x1);
+            var pnt5_y1 = parseInt(height * r5_y1);
+            var pnt5_x2 = parseInt(width * r5_x2);
+            var pnt5_y2 = parseInt(height * r5_y2);
+
+            var pnt6_x1 = parseInt(width * r6_x1);
+            var pnt6_y1 = parseInt(height * r6_y1);
+            var pnt6_x2 = parseInt(width * r6_x2);
+            var pnt6_y2 = parseInt(height * r6_y2);
+
+            var a1 = document.getElementById('area_Access');
+            var a2 = document.getElementById('area_Effectiveness');
+            var a3 = document.getElementById('area_Efficiency');
+            var a4 = document.getElementById('area_Equity');
+            var a5 = document.getElementById('area_Text1');
+            var a6 = document.getElementById('area_Text2');
+            a1.coords = pnt1_w + ', ' + pnt1_h + ', 25';
+            a2.coords = pnt2_w + ', ' + pnt2_h + ', 25';
+            a3.coords = pnt3_w + ', ' + pnt3_h + ', 25';
+            a4.coords = pnt4_w + ', ' + pnt4_h + ', 25';
+            a5.coords = pnt5_x1 + ', ' + pnt5_y1 + ', ' + pnt5_x2 + ', ' + pnt5_y2;
+            a6.coords = pnt6_x1 + ', ' + pnt6_y1 + ', ' + pnt6_x2 + ', ' + pnt6_y2;
+        }
+    </script>
+</head>
+
+<body class="letter-spacing sub-text">
+    <script>
+        $(function () {
+            $("#header").load("/INNOVATIONECOSYSTEM/partials/header.html");
+            $("#footer").load("/INNOVATIONECOSYSTEM/partials/footer.html");
+        });
+    </script>
+
+    <div id="header"></div>
+    <main id="main-content" role="main">
+        <!-- introduction  -->
+        <section class="usa-section small-padding padding-bottom-3 " style="background-color: #537494 !important;">
+            <div class="grid-container padding-3">
+                <div class="grid-row grid-gap-4" style="text-align: center;">
+                    <h2 class="font-heading-xl padding-top-0 padding-bottom-0 text-white" style="text-align: left;">
+                        Value-Driven Framework for Evaluating Healthcare Innovations
+                    </h2>
+                    <!--<h3 class="font-heading-l padding-top-0 padding-bottom-0 text-white" style="text-align: left;">
+                        Designing a Path to High Value Care
+                    </h3>-->
+                    <div class="tablet:grid-col-12 text-left padding-top-1 ">
+                        <p class="font-body-md text-white" style="line-height: 1.7;letter-spacing: .6px;">
+                            To measure healthcare innovation success and value, the Office of Healthcare Innovation and Learning (OHIL) created a fit-for-purpose evaluation framework that focuses on four dynamic measures of value—access, effectiveness, efficiency, and equity—and follows three fundamental principles—meaningfulness, appropriateness of scale, and time to value realization.
+                            <br /><br />
+                            <a class="text-white" href="/INNOVATIONECOSYSTEM/assets/documents/ExecutiveReport_ValueDrivenFramework_Final_03_2022.pdf">With this new framework</a>, there is an opportunity to:
+                            <br />
+                            <ul>
+                                <li class="text-white">Prioritize what matters to Veterans and continue to support <b>excellence in value-driven Veteran healthcare</b></li>
+                                <li class="text-white">Design, develop and deploy a portfolio of  <b>mission-driven and sustainable healthcare</b> innovations</li>
+                                <li class="text-white">Realize the dynamism of innovation value, yielding more significant health outcomes over time from <b>individual and population levels</b></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-12 text-left padding-top-1 ">
+                        <p class="font-body-md text-white" style="line-height: 1.7;letter-spacing: .6px;">
+                            Population Level
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row grid-col-3" style=" margin:0 auto;">
+                <div style="text-align:center;  width:100% !important">
+                    <a target="_blank" class="usa-button  btn-lg  margin-bottom-1 margin-top-2"
+                       href="#"
+                       style="background-color: #0E2640; color: white; text-align: center; width:100% !important; height:45px"><small>DOWNLOAD THE EXECUTIVE REPORT</small></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- news/awars/interview section background-image:url(/innovationecosystem/assets/images/ncchi/world.jpg);-->
+        <section class="usa-section small-padding usa-section  padding-top-0 padding-bottom-0">
+            <div class="grid-container">
+                <div class="grid-row margin-top-3 margin-bottom-3">
+                    <div class="tablet:grid-col">
+                        <h2 class="font-heading-xl text-dark">
+                            Anatomy of the Framework
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="usa-layout-docs__main  usa-prose">
+                    <img id="VBIF_ValueImage" src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/VBIF-PgImg1.png" usemap="#workmap" />
+                    <map name="workmap">
+                        <area id="area_Access" shape="circle" coords="" title="The timely use of personal health services to achieve the best health outcomes" tooltip="this is the tooltip" alt="x" href="#">
+                        <area id="area_Effectiveness" shape="circle" coords="" title="Providing services based on scientific knowledge to all who could benefit and refraining from providing services to those not likely to benefit (avoiding underuse and misuse, respectively)" tooltip="this is the tooltip" alt="x" href="#">
+                        <area id="area_Efficiency" shape="circle" coords="" title="The extent to which the inputs to the health system, in the form of expenditure and other resources, are used to best effect to secure health system outputs and/or valued health system goals" tooltip="this is the tooltip" alt="x" href="#">
+                        <area id="area_Equity" shape="circle" coords="" title="Achieved when every person has the opportunity to attain his or her full health potential and no one is disadvantaged from achieving this potential because of social position. No value measure is more important than the other—thereby providing personalized, tailored care for our Veterans or other socially determined circumstances" tooltip="this is the tooltip" alt="x" href="#">
+                        <area id="area_Text1" shape="rect" coords="" title="A healthcare innovation should be assessed by how it drives value across these four measures: Access, Effectiveness, Efficiency, and Equity. Positive outcomes across these foundational, time-agnostic measures help shape the ideal state of healthcare for Veterans." tooltip="this is the tooltip" alt="x" href="#">
+                        <area id="area_Text2" shape="rect" coords="" title="Meaningfulness, Appropriateness of Scale, and Time to Value Realization are fundamental principles that should frame the value-determination of an innovation. These principles operate across the value measures and hold equal importance. However, if an innovation does not demonstrate meaningfulness as a primary step, one should not move forward." tooltip="this is the tooltip" alt="x" href="#">
+                    </map>
+                </div>
+
+            </div>
+        </section>
+        <div style="width:100% !important; height:50px;"></div>
+
+        <!-- section 3 -->
+        <section class="usa-section" style="width: 100% !important; background-color: #537494;">
+            <div class="grid-col-8 padding-3 nbSection" style="margin:0 auto !important;">
+                <div class="grid-col-8">
+                    <h2 class="font-heading-xl text-white margin-left-3">Designing a Path to High Value Care Through Innovations that matters to Veterans</h2>
+                </div>
+                <!-- Row 1   -->
+                <div class="grid-row ">
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div>
+                            <h3 class="text-gold margin-3">VETERANS</h3>
+                            <p class="text-white margin-3">
+                                “Technology is moving quickly and it’s hard
+                                for Veterans like me to keep up. I love my
+                                VA care. They never stop pushing the
+                                boundaries of how it can be better for
+                                me and my fellow Veterans.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div>
+                            <h3 class="text-gold margin-3">HEALTH SYSTEM LEADERS</h3>
+                            <p class="text-white margin-3">
+                                “We have an opportunity to redefine
+                                the blueprint for successful healthcare
+                                innovations. To be transformational,
+                                evaluation frameworks need to define
+                                true value as that which matters most
+                                to our Veteran patients.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div>
+                            <h3 class="text-gold margin-3">DECISION-MAKERS</h3>
+                            <p class="text-white margin-3">
+                                “To innovate the path to high value care,
+                                we must first redefine value beyond just
+                                dollars and cents. To ensure that every
+                                dollar invested returns value to the Veterans
+                                we serve, we need to focus on measuring
+                                value across access,
+                                effectiveness, efficiency, and equity.”
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Row 2   -->
+                <div class="grid-row">
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div class="grid-row">
+                            <div class="tablet:grid-col" style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/TEAM-HEADSHOTS/MICHAEL_BORGES.PNG" style="width: 200px !important;" />
+                            </div>
+                            <div class="tablet:grid-col margin-left-3">
+                                <h3 class="text-gold"> Michael Borges</h3>
+                                <p class="text-white">
+                                    Veteran Patient Expert,
+                                    U.S. Airforce Retired
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div class="grid-row">
+                            <div class="tablet:grid-col" style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/TEAM-HEADSHOTS/Carolyn_Clancy.PNG" style="width: 200px !important;" />
+                            </div>
+                            <div class="tablet:grid-col margin-left-3">
+                                <h3 class="text-gold"> Carolyn Clancy, MD</h3>
+                                <p class="text-white">
+                                    Assistant Under Secretary for
+                                    Health for Discovery, Education,
+                                    and Affiliate Networks
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 TempBox">
+                        <div class="grid-row">
+                            <div class="tablet:grid-col" style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/TEAM-HEADSHOTS/Ryan_Vega.PNG" style="width: 200px !important;" />
+                            </div>
+                            <div class="tablet:grid-col margin-left-3">
+                                <h3 class="text-gold"> Ryan Vega, MD, MHSA</h3>
+                                <p class="text-white">
+                                    Ryan Vega, MD, MHSA
+                                    Chief Officer, Office of Health,
+                                    Innovation, and Learning
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+        <section class="usa-graphic-list usa-section padding-top-0 p" style="background-color: #537494 !important; ">
+            <div class="grid-col-8 padding-3 nbSection" style="margin:0 auto !important">
+                <div class="grid-row grid-gap-4" style="text-align: center;">
+                    <h2 class="font-heading-xl padding-top-0 padding-bottom-0 text-white" style="text-align: left;">
+                        The Evidence-Based Framework Uses a Mixed-Method Approach Uses a Mixed-Method Approach
+                    </h2>
+                    <div class="tablet:grid-col-12 text-left text-white padding-top-1 ">
+                        <p>
+                            The Value-Driven Framework for Evaluating Healthcare Innovations is the culmination of extensive research to include a literature review, expert interviews, and user-testing
+                        </p>
+                    </div>
+
+                    <!-- Row 1   -->
+                    <div class="grid-row ">
+                        <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg" style="background-color: #124378">
+                            <div>
+                                <p class="text-white margin-3">
+                                    <label style="font-size:32px">80+</label> evidence-based research publications reviewed to understand the current state of value frameworks in healthcare.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg" style="background-color: #124378">
+                            <div>
+                                <p class="text-white margin-3">
+                                    <label style="font-size:32px">30+</label> leaders internal and external to VA interviewed. Expertise included implementation science, innovation strategy, digital health, health equity, healthcare administration, and Veterans themselves.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg" style="background-color: #124378">
+                            <div>
+                                <p class="text-white margin-3">
+                                    <label style="font-size:32px">33</label> years of peer reviewed publications on healthcare innovation and value frameworks were examined.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section class="usa-graphic-list usa-section padding-top-0 p" style="background-color: #537494 !important; ">
+            <div class="grid-col-8 padding-3 nbSection" style="margin:0 auto !important">
+                <div class="grid-row grid-gap-4" style="text-align: center;">
+                    <h2 class="font-heading-xl padding-top-0 padding-bottom-0 text-white" style="text-align: left;">
+                        Value-Driven Framework In Action
+                    </h2>
+                    <div class="" style="background-color: #dcdee0">
+
+                        <!-- Row 1   -->
+                        <div class="grid-row ">
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                                <div>
+                                    <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/VBIF-ValueDrivenFramework_Img1.png" />
+                                </div>
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                                <div>
+                                    <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/VBIF-ValueDrivenFramework_Img2.png" />                                    <img />
+                                </div>
+
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                                <div>
+                                    <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/VBIF-ValueDrivenFramework_Img3.png" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Row 2   -->
+                        <div class="grid-row ">
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg bg-primary-dark">
+                                <div>
+                                    <p class="text-white margin-3">
+                                        <label style="font-size:28px">PRIDE</label><br />
+                                        PRIDE in all Who Served Program (PRIDE) is a 10-week health education group for LGBTQIA+ Veterans with the aim of reducing health care disparities and enabling dialogue related to health care needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg bg-primary-dark">
+                                <div>
+                                    <p class="text-white margin-3">
+                                        <label style="font-size:28px">3D Printing</label><br /> 3D Printing reimagines personalized care delivery and provides patient-specific solutions, even when no commercial products exist or are available
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg bg-primary-dark">
+                                <div>
+                                    <p class="text-white margin-3">
+                                        <label style="font-size:28px">SmartHEART</label><br /> The Smart Health Education and Rehab Technology (SmartHEART) Program uses smartphone technologies and telehealth capabilities to deliver cardiac rehab to Veterans.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row 3   -->
+                        <div class="grid-row">
+                            <div class="tablet:grid-col grid-gap padding-top-1 margin-right-1  padding-bottom-2 box-me-blue radius-lg">
+                                <div class="grid-gap">
+                                    <a target="_blank" class="usa-button btn-me btn-lg shadowme a-work margin-bottom-1 margin-top-2"
+                                       href="#" title="Read More, to condensed PDF files sent by Josh with delivery package"><small>Read More >></small></a>
+                                </div>
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue radius-lg">
+                                <div class="grid-gap">
+                                    <a target="_blank" class="usa-button btn-me btn-lg shadowme a-work margin-bottom-1 margin-top-2"
+                                       href="#" title="Read More, to condensed PDF files sent by Josh with delivery package"><small>Read More >></small></a>
+                                </div>
+
+                            </div>
+                            <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue radius-lg">
+                                <div class="grid-gap">
+                                    <a target="_blank" class="usa-button btn-me btn-lg shadowme a-work margin-bottom-1 margin-top-2"
+                                       href="#" title="Read More, to condensed PDF files sent by Josh with delivery package"><small>Read More >></small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-row grid-col-5" style="margin:0 auto;">
+                        <div class="margin-top-2" style="text-align:center;  width:100% !important">
+                            <a target="_blank" class="usa-button btn-lg  margin-bottom-1 margin-top-2"
+                               href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kmTmTlUN0dNWDY3TE9QOTFBR1QyV0RPWllDSjQ2SS4u&wdLOR=cC5F091F4-C0C5-4148-9628-09C83F2AE6E6"
+                               style="background-color: #0E2640; color: white; text-align: center; width:100% !important; height:45px"><small>SUBMIT YOUR INNOVATION STORY WITH VA</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <!--style="background-color: #537494 !important;"-->
+        <section class="usa-graphic-list usa-section padding-top-0 p bg-primary-dark">
+            <div class="grid-col-10 padding-3 nbSection" style="margin:0 auto !important">
+                <div class="grid-row ">
+                    <div class="tablet:grid-col text-white margin-3">
+                        <p>
+                            <h2 class="font-heading-xl"> How to Deploy the Framework<br /></h2>
+                            <h3>The Value-Driven Framework for Evaluating Healthcare Innovations offers three solutions to decision makers:</h3>
+                        </p>
+                    </div>
+                </div>
+                <!-- Row 1   -->
+                <div class="grid-row ">
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                        <div class="margin-3">
+                            <div style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/number1.png" style="width:75px" />
+                                <h2 class="text-gold">Demonstrate</h2>
+                            </div>
+                            <p class="text-white">
+                                <label class="text-white">
+                                    The balance of value being pursued across an innovation portfolio<br />
+                                    <ul class="text-white">
+                                        <li>Is your innovation portfolio balanced to meet your strategic goals?</li>
+                                        <li>Do you have a clear vision of how the innovations in your portfolio will mature over time and yield new value?</li>
+                                    </ul>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                        <div class="margin-3">
+                            <div style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/number2.png" style="width:75px" />
+                                <h2 class="text-gold">Support</h2>
+                            </div>
+                            <p class="text-white">
+                                <label class="text-white">
+                                    Investment decisions based off a holistic evaluation of the value they promise<br />
+                                    <ul class="text-white">
+                                        <li>How do your investment opportunities in healthcare innovation promise to return value across the domains of access, effectiveness, efficiency, and/or equity?</li>
+                                        <li>How are your investment opportunities in healthcare innovation meaningful to Veterans?</li>
+                                        <li>What is the optimal scale of your investment opportunities in healthcare innovation?</li>
+                                        <li>What is the potential of investment opportunities in healthcare innovation to realize additional value over time?</li>
+                                    </ul>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  padding-top-1 margin-right-1  padding-bottom-2 box-me-blue margin-top-2 radius-lg">
+                        <div class="margin-3">
+                            <div style="text-align:center !important">
+                                <img src="/INNOVATIONECOSYSTEM/ASSETS/IMAGES/IEX/number3.png" style="width:75px" />
+                                <h2 class="text-gold">Inform</h2>
+                            </div>
+                            <p class="text-white">
+                                <label class="text-white">
+                                    Operational rigor needed to track the full range of value returned from the innovation portfolio<br />
+                                    <ul class="text-white">
+                                        <li>How does your organization equip innovators with data that outlines the needs and experiences of Veterans to ensure meaningful innovation?</li>
+                                        <li>How does your organization track and measure impact across the “value measures” (access, effectiveness, efficiency, and equity) for each innovation?</li>
+                                    </ul>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <!-- <script type="text/javascript" src="/assets/js/slick.js"></script>   -->
+</body>
+
+</html>

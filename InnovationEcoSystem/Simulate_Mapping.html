@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var t = document.getElementById('area_jacsksonville');
+
+            //// first way
+            t.coords = '593,358,11';
+            t.title = 'Jacksonville VA Hospital' + '\n' + '2nd line' + '\n' + '3rd line'  + '\n' + '4th line';
+            t.alt = 'foo';
+
+            // alternate way
+            //t.setAttribute('coords', '593,358,11');
+            //t.setAttribute('alt', 'new alt');
+            //t.setAttribute('title', 'new Title');
+        });
+    </script>
+
+</head>
+<body>
+
+
+    <!--<img src="assets/images/iNET/INET_Site_Map_10-18-21.png" alt="usa map" usemap="#workmap"
+         style="width:1313px; height:844px; border:1px solid red">-->
+    <img src="assets/images/iNET/INET_Site_Map_10-18-21.png" alt="usa map" usemap="#workmap"
+         style="width:700px; height:450px; border:1px solid red">
+
+    <map name="workmap">
+        <!--<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">-->
+        <area shape="circle" coords="1120,678,21" title="Jacksonville" alt="VA Jacksonville" href="coffee.htm" style="background-color:red !important">
+        <!-- <area id="area_jacsksonville" shape="circle" coords="593,358,11" title="Jacksonville2" alt="VA Jacksonville" href="coffee.htm" style="background-color:red !important">  -->
+
+        <area id="area_jacsksonville" shape="circle" coords="0" title="Jacksonville VA" tooltip="this is the tooltip" alt="x" href="coffee.htm" style="background-color:red !important">
+    </map>
+</body>
+</html>

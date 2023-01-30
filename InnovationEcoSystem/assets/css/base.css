@@ -1,0 +1,102 @@
+
+
+
+.usa-button:hover {
+    background-color: #1689CA !important; /*  uswds #005EA2 !important; */
+    border-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.box-me:hover {
+    background-color: #1689CA !important; /*  uswds #005EA2 !important; */
+    border-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.usa-card__img {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+    border-radius: 0px !important;
+}
+
+.usa-card__container {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+    border-radius: 0px !important;
+}
+
+.box-me-blue {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    background-color: #162e51;
+    border-color: #005ea2;
+    border-top-width: 10px;
+}
+
+.box-me-green {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    background-color: #162e51;
+    border-color: #7fb135;
+    border-top-width: 10px;
+}
+
+.box-me-red {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    background-color: #162e51;
+    /* border-color: #e66f0e;  USWDS ORANGE */
+    border-color: #e52207;
+    border-top-width: 10px;
+}
+
+
+.box-me-blue:hover {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    background-color: #005ea2;
+    border-top-width: 10px;
+}
+
+.box-me-green:hover {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    background-color: #7fb135;
+    border-top-width: 10px;
+}
+
+.box-me-red:hover {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    /*            background-color: #e66f0e; USWDS ORANGE */
+    background-color: #e52207;
+    border-top-width: 10px;
+}
+
+img.desaturate {
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    filter: url(resources.svg#desaturate); /* older Firefox */
+    filter: grayscale(100%); /* Current draft standard */
+}
+
+    img.desaturate:hover {
+        filter: none !important; /* IE */
+        -webkit-filter: none !important; /* Old WebKit */
+        -webkit-filter: none !important; /* New WebKit */
+        /*filter: url(resources.svg#desaturate);*/ /* older Firefox */
+        filter: none !important; /* Current draft standard */
+    }
